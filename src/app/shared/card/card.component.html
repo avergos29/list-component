@@ -1,0 +1,11 @@
+<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 {{status}}">
+    {{ label }}
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right">
+    <button *ngIf="status!='done'" class="btn btn-default todo-action-button"(click)="onEdit()">
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+    </button>
+    <button *ngIf="status!= 'done'" class="btn btn-default todo-action-button" (click)="onDelete()">
+        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
+    </button>
+</div>
